@@ -25,9 +25,10 @@ body, * {
 }
 .app-content {
 	display: flex;
-	justify-content: space-around;
+	align-items: flex-start;
+	gap: 10px;
 	padding: 20px;
-	max-width:960px;
+	max-width: 960px;
 }
 
 .counter-box { 
@@ -49,7 +50,7 @@ body, * {
 	margin-bottom: 20px
 }
 
-button {
+button, .btn {
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -87,14 +88,14 @@ button:hover {
 	border-bottom: none;
 }
 
-#increment-btn {
+#increment-btn, .btn-primary {
 	background: #022F10;
 }
-#decrement-btn {
+#decrement-btn, .btn-danger {
 	background: #8B0000;
 }
 
-#save-btn {
+#save-btn, .btn-success {
 	background: #006400;
 }
 

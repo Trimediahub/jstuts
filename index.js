@@ -1,19 +1,9 @@
-
-//document.getElementById("count-el").innerText = 5;
-
 //let count = 5;
 //count += 1;
 //console.log(count);
 
-// initialize the count as 0
-// listen for the clicks on the increment button
-// increment the count variable when the button is clicked
-// change the count-el in the HTML to reflect the new count
-let saveEl = document.getElementById("save-el");
-let countEl = document.getElementById("count-el");
-let count = 0;
 
-function increment() {
+/*function increment() {
 	
 	count += 1;
 	
@@ -62,3 +52,26 @@ function multi() {
 	
 	sumEl.textContent += ", " + total;
 }
+*/
+
+let firstCard = 10;
+let secondCard = 11;
+let hasBlackJack = false;
+let isAlive = true;
+let sum = firstCard + secondCard;
+
+if (sum <= 20 ) {
+	console.log("Do you want to draw a new card?");
+} 
+
+else if (sum === 21 ) {
+	console.log("Wohoo! you have blackjack!");
+	hasBlackJack = true;
+} 
+
+else {
+	console.log("Sorry, you're out of the game!");
+	isAlive = false;
+}
+
+console.log(isAlive);
